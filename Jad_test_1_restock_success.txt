@@ -1,0 +1,9 @@
+test 1 restock success
+
+1. Start a fresh run. Use option 2 to add Pen with quantity 2 and a unique ID such as P106
+2. Choose option 10 (Restock product). Enter "Pen" and 3 units
+3. Choose option 1 (View all products) and check Pen's quantity
+
+Expected: Stock increases to 5.
+Actual result: The program showed "Product restocked. New quantity: 5".Option 1 showed 5 pens.
+Result: Pass 

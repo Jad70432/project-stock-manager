@@ -1,0 +1,9 @@
+test 4 restock unknown
+
+1. Start a fresh run. Use option 2 to add Pen with quantity 2 and a unique ID such as P106
+2. Choose option 10 (Restock product). Enter "Missing Product" and 3 units
+3. Choose option 1 (View all products) and check Pen's quantity.
+
+Expected: Product is rejected as unknown. Pen stock stays at 2
+Actual result: The program said "Product name not found." Option 1 still showed 2 pens
+Result: Pass 
