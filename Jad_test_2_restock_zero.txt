@@ -1,0 +1,9 @@
+test 2 restock zero
+
+1. Start a fresh run. Use option 2 to add Pen with quantity 2 and a unique ID such as P106
+2. Choose option 10 (Restock product). Enter "Pen" and 0 units
+3. Choose option 1 (View all products) and check Pen's quantity
+
+Expected: Amount is rejected. Stock stays at 2
+Actual result: The program said "Enter a quantity greater than zero." Option 1 still showed 2 pens
+Result: Pass 
