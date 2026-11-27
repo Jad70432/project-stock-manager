@@ -105,8 +105,6 @@ class Inventory:
     def process_order(self, order_list):
         if len(order_list) == 0:
             return False, "Order cannot be empty.", 0.0
-
-        # Group repeated product IDs before checking the available stock.
         quantities = {}
         for product_id, quantity in order_list:
             if product_id not in self.__products:
@@ -118,7 +116,6 @@ class Inventory:
                 quantities[product_id] = 0
             quantities[product_id] += quantity
 
-        # Check the whole order before changing any product.
         for product_id, quantity in quantities.items():
             product = self.__products[product_id]
             if quantity > product.get_quantity():
@@ -194,7 +191,6 @@ class Inventory:
         infile.close()
         return True
 
-
 def read_int(prompt):
     while True:
         text = input(prompt)
@@ -213,7 +209,6 @@ def read_float(prompt):
             return num
         except ValueError:
             print("Invalid input. Enter a number.")
-
 
 def load_sample_data(inv):
     inv.add_product(Product("P101", "Wireless Mouse", "Electronics", 25.0, 15, 5, 12))
