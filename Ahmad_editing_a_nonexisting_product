@@ -1,0 +1,8 @@
+1. Start a fresh run.
+2. Choose Edit product.
+3. Enter a nonexistent product ID such as P999.
+
+Expected: The product is not found and the
+function returns False.
+Actual result: To be recorded.
+Result: Pending.
