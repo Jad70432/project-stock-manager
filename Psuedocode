@@ -1,0 +1,13 @@
+FUNCTION Edit_Product(product_id, name, category, price, quantity, min_stock)
+
+    IF product_id NOT IN products THEN
+        RETURN False
+    END IF
+
+    p ← products[product_id]
+
+    CALL p.update_info(name, category, price, quantity, min_stock)
+
+    RETURN True
+
+END FUNCTION
