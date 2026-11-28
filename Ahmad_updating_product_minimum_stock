@@ -1,0 +1,11 @@
+1. Start a fresh run. Use option 2 to add a
+   Pencil with ID P103, quantity 20 and
+   minimum stock 5.
+2. Choose Edit product. Enter P103 and change
+   the minimum stock to 8. Keep other values unchanged.
+3. Choose option 1 (View all products) and
+   check the minimum stock.
+
+Expected: Minimum stock changes from 5 to 8.
+Actual result: To be recorded.
+Result: Pending.
